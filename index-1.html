@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumpuree — Kinetic Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-animated.css">
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <span class="preloader-letter">R</span>
+            </div>
+            <div class="preloader-text">RUMPUREE</div>
+            <div class="preloader-bar"><div class="preloader-fill"></div></div>
+        </div>
+    </div>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <nav class="nav-kinetic" id="navKinetic">
+        <div class="nav-kinetic-inner">
+            <a href="#" class="logo-kinetic">
+                <span class="logo-kinetic-dot"></span>
+                <span class="logo-kinetic-text">Rumpuree</span>
+            </a>
+            <ul class="nav-kinetic-links">
+                <li><a href="#hero" class="nav-kinetic-link active">Home</a></li>
+                <li><a href="#schedule" class="nav-kinetic-link">Schedule</a></li>
+                <li><a href="#styles" class="nav-kinetic-link">Styles</a></li>
+                <li><a href="#events" class="nav-kinetic-link">Events</a></li>
+                <li><a href="#about" class="nav-kinetic-link">About</a></li>
+                <li><a href="https://booking.rumpuree.com" class="btn-kinetic">Login</a></li>
+            </ul>
+            <button class="nav-toggle-kinetic" id="navToggleKinetic" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu-kinetic" id="mobileMenuKinetic">
+            <a href="#hero"><span class="mobile-num">01</span>Home</a>
+            <a href="#schedule"><span class="mobile-num">02</span>Schedule</a>
+            <a href="#styles"><span class="mobile-num">03</span>Styles</a>
+            <a href="#events"><span class="mobile-num">04</span>Events</a>
+            <a href="#about"><span class="mobile-num">05</span>About</a>
+            <a href="https://booking.rumpuree.com" class="btn-kinetic btn-mobile-full">Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero-kinetic" id="hero">
+            <div class="hero-kinetic-bg">
+                <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=1920&q=80" alt="" class="hero-kinetic-img" loading="eager">
+                <div class="hero-kinetic-gradient"></div>
+            </div>
+            <div class="hero-kinetic-content">
+                <div class="hero-kinetic-eyebrow">
+                    <span class="hero-line-prefix">//</span> BANGKOK'S PREMIERE DANCE STUDIO
+                </div>
+                <h1 class="hero-kinetic-title">
+                    <span class="hero-title-line">Movement</span>
+                    <span class="hero-title-line hero-title-italic">is</span>
+                    <span class="hero-title-line hero-title-stroke">Expression</span>
+                </h1>
+                <p class="hero-kinetic-desc">Discover 40+ dance styles with world-class instructors. From beginner to professional — find your rhythm at Rumpuree.</p>
+                <div class="hero-kinetic-actions">
+                    <a href="#schedule" class="btn-kinetic btn-kinetic-primary">Explore Classes</a>
+                    <a href="#styles" class="btn-kinetic btn-kinetic-ghost">View Styles</a>
+                </div>
+            </div>
+            <div class="hero-kinetic-scroll">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>SCROLL</span>
+            </div>
+        </section>
+
+        <!-- MARQUEE -->
+        <div class="marquee-kinetic">
+            <div class="marquee-kinetic-track">
+                <span class="marq-item">Ballet</span><span class="marq-dot"></span>
+                <span class="marq-item">Hip Hop</span><span class="marq-dot"></span>
+                <span class="marq-item">K-Pop</span><span class="marq-dot"></span>
+                <span class="marq-item">Contemporary</span><span class="marq-dot"></span>
+                <span class="marq-item">Salsa</span><span class="marq-dot"></span>
+                <span class="marq-item">Belly Dance</span><span class="marq-dot"></span>
+                <span class="marq-item">Jazz</span><span class="marq-dot"></span>
+                <span class="marq-item">Yoga</span><span class="marq-dot"></span>
+                <span class="marq-item">Pole Dance</span><span class="marq-dot"></span>
+                <span class="marq-item">Zumba</span><span class="marq-dot"></span>
+                <span class="marq-item">Tango</span><span class="marq-dot"></span>
+                <span class="marq-item">Bollywood</span><span class="marq-dot"></span>
+                <span class="marq-item">Flamenco</span><span class="marq-dot"></span>
+                <span class="marq-item">Ballet</span><span class="marq-dot"></span>
+                <span class="marq-item">Hip Hop</span><span class="marq-dot"></span>
+                <span class="marq-item">K-Pop</span><span class="marq-dot"></span>
+                <span class="marq-item">Contemporary</span><span class="marq-dot"></span>
+                <span class="marq-item">Salsa</span><span class="marq-dot"></span>
+                <span class="marq-item">Belly Dance</span><span class="marq-dot"></span>
+                <span class="marq-item">Jazz</span><span class="marq-dot"></span>
+                <span class="marq-item">Yoga</span><span class="marq-dot"></span>
+                <span class="marq-item">Pole Dance</span><span class="marq-dot"></span>
+                <span class="marq-item">Zumba</span><span class="marq-dot"></span>
+                <span class="marq-item">Tango</span><span class="marq-dot"></span>
+                <span class="marq-item">Bollywood</span><span class="marq-dot"></span>
+                <span class="marq-item">Flamenco</span><span class="marq-dot"></span>
+            </div>
+        </div>
+
+        <!-- SCHEDULE -->
+        <section class="section-kinetic section-schedule-kinetic" id="schedule">
+            <div class="container-kinetic">
+                <div class="section-kinetic-header">
+                    <span class="section-kinetic-num">[02]</span>
+                    <h2 class="section-kinetic-title">Upcoming<br>Classes</h2>
+                    <p class="section-kinetic-sub">This week's schedule at a glance</p>
+                </div>
+                <div class="schedule-kinetic-list">
+                    <div class="schedule-kinetic-item">
+                        <div class="sched-kin-col sched-kin-day">
+                            <span class="sched-kin-num">18</span>
+                            <span class="sched-kin-name">THU</span>
+                        </div>
+                        <div class="sched-kin-col sched-kin-line"></div>
+                        <div class="sched-kin-col sched-kin-info">
+                            <h3>Hip Hop Fundamentals</h3>
+                            <p>6:00 PM — 7:30 PM · Asok Branch</p>
+                        </div>
+                        <div class="sched-kin-col sched-kin-tag-wrap">
+                            <span class="sched-kin-tag">BEGINNER</span>
+                        </div>
+                    </div>
+                    <div class="schedule-kinetic-item">
+                        <div class="sched-kin-col sched-kin-day">
+                            <span class="sched-kin-num">19</span>
+                            <span class="sched-kin-name">FRI</span>
+                        </div>
+                        <div class="sched-kin-col sched-kin-line"></div>
+                        <div class="sched-kin-col sched-kin-info">
+                            <h3>Contemporary Flow</h3>
+                            <p>5:00 PM — 6:30 PM · Samyan</p>
+                        </div>
+                        <div class="sched-kin-col sched-kin-tag-wrap">
+                            <span class="sched-kin-tag">ALL LEVELS</span>
+                        </div>
+                    </div>
+                    <div class="schedule-kinetic-item">
+                        <div class="sched-kin-col sched-kin-day">
+                            <span class="sched-kin-num">20</span>
+                            <span class="sched-kin-name">SAT</span>
+                        </div>
+                        <div class="sched-kin-col sched-kin-line"></div>
+                        <div class="sched-kin-col sched-kin-info">
+                            <h3>K-Pop Cover Dance</h3>
+                            <p>2:00 PM — 3:30 PM · Asok Branch</p>
+                        </div>
+                        <div class="sched-kin-col sched-kin-tag-wrap">
+                            <span class="sched-kin-tag">INTERMEDIATE</span>
+                        </div>
+                    </div>
+                    <div class="schedule-kinetic-item">
+                        <div class="sched-kin-col sched-kin-day">
+                            <span class="sched-kin-num">21</span>
+                            <span class="sched-kin-name">SUN</span>
+                        </div>
+                        <div class="sched-kin-col sched-kin-line"></div>
+                        <div class="sched-kin-col sched-kin-info">
+                            <h3>Pole Dance Intro</h3>
+                            <p>11:00 AM — 12:30 PM · Asok Branch</p>
+                        </div>
+                        <div class="sched-kin-col sched-kin-tag-wrap">
+                            <span class="sched-kin-tag">BEGINNER</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-kinetic-cta">
+                    <a href="https://singhawon.com/schedule/4" class="btn-kinetic btn-kinetic-outline">Full Schedule <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DANCE STYLES -->
+        <section class="section-kinetic section-styles-kinetic" id="styles">
+            <div class="container-kinetic">
+                <div class="section-kinetic-header">
+                    <span class="section-kinetic-num">[03]</span>
+                    <h2 class="section-kinetic-title">Dance<br>Styles</h2>
+                    <p class="section-kinetic-sub">From classical to street — we have it all</p>
+                </div>
+                <div class="styles-kinetic-grid">
+                    <div class="style-kinetic-card">
+                        <span class="style-kinetic-num">01</span>
+                        <h3>Ballet</h3>
+                        <p>Grace, discipline, and timeless elegance for all levels.</p>
+                        <div class="style-kinetic-hover-bg"></div>
+                    </div>
+                    <div class="style-kinetic-card">
+                        <span class="style-kinetic-num">02</span>
+                        <h3>Hip Hop</h3>
+                        <p>Urban rhythm, freestyle culture, and powerful grooves.</p>
+                        <div class="style-kinetic-hover-bg"></div>
+                    </div>
+                    <div class="style-kinetic-card">
+                        <span class="style-kinetic-num">03</span>
+                        <h3>K-Pop</h3>
+                        <p>Learn the choreography behind your favorite idols.</p>
+                        <div class="style-kinetic-hover-bg"></div>
+                    </div>
+                    <div class="style-kinetic-card">
+                        <span class="style-kinetic-num">04</span>
+                        <h3>Contemporary</h3>
+                        <p>Fluid expression blending technique with emotion.</p>
+                        <div class="style-kinetic-hover-bg"></div>
+                    </div>
+                    <div class="style-kinetic-card">
+                        <span class="style-kinetic-num">05</span>
+                        <h3>Salsa</h3>
+                        <p>Latin fire, partner connection, and social dance joy.</p>
+                        <div class="style-kinetic-hover-bg"></div>
+                    </div>
+                    <div class="style-kinetic-card">
+                        <span class="style-kinetic-num">06</span>
+                        <h3>Belly Dance</h3>
+                        <p>Ancient art of isolations, strength, and femininity.</p>
+                        <div class="style-kinetic-hover-bg"></div>
+                    </div>
+                    <div class="style-kinetic-card">
+                        <span class="style-kinetic-num">07</span>
+                        <h3>Jazz</h3>
+                        <p>Energetic, sharp, and syncopated with musical flair.</p>
+                        <div class="style-kinetic-hover-bg"></div>
+                    </div>
+                    <div class="style-kinetic-card">
+                        <span class="style-kinetic-num">08</span>
+                        <h3>Yoga Flow</h3>
+                        <p>Mindful movement, breathwork, and inner balance.</p>
+                        <div class="style-kinetic-hover-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTS -->
+        <section class="section-kinetic section-events-kinetic" id="events">
+            <div class="container-kinetic">
+                <div class="section-kinetic-header">
+                    <span class="section-kinetic-num">[04]</span>
+                    <h2 class="section-kinetic-title">Upcoming<br>Events</h2>
+                </div>
+                <div class="events-kinetic-grid">
+                    <div class="event-kinetic-card">
+                        <div class="event-kinetic-img">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Event" loading="lazy">
+                        </div>
+                        <div class="event-kinetic-body">
+                            <span class="event-kinetic-tag">WORKSHOP</span>
+                            <h3>Summer Dance Camp</h3>
+                            <p>Intensive workshop for all levels · July 2026</p>
+                        </div>
+                    </div>
+                    <div class="event-kinetic-card">
+                        <div class="event-kinetic-img">
+                            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&q=80" alt="Event" loading="lazy">
+                        </div>
+                        <div class="event-kinetic-body">
+                            <span class="event-kinetic-tag">PERFORMANCE</span>
+                            <h3>Rumpuree Showcase</h3>
+                            <p>Annual student performance night · August</p>
+                        </div>
+                    </div>
+                    <div class="event-kinetic-card">
+                        <div class="event-kinetic-img">
+                            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?w=600&q=80" alt="Event" loading="lazy">
+                        </div>
+                        <div class="event-kinetic-body">
+                            <span class="event-kinetic-tag">SOCIAL</span>
+                            <h3>Dance Social Night</h3>
+                            <p>Meet & dance with the community · Monthly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section-kinetic section-about-kinetic" id="about">
+            <div class="container-kinetic">
+                <div class="about-kinetic-grid">
+                    <div class="about-kinetic-text">
+                        <span class="section-kinetic-num">[05]</span>
+                        <h2 class="section-kinetic-title text-left">About<br>Rumpuree</h2>
+                        <p class="about-kinetic-body">For over two decades, Rumpuree has been Bangkok's destination for dance. Our two studios — Asok and Samyan — welcome dancers of every background, level, and dream.</p>
+                        <div class="about-kinetic-stats">
+                            <div class="about-kinetic-stat">
+                                <span class="about-kinetic-stat-num">40+</span>
+                                <span class="about-kinetic-stat-label">Dance Styles</span>
+                            </div>
+                            <div class="about-kinetic-stat">
+                                <span class="about-kinetic-stat-num">25</span>
+                                <span class="about-kinetic-stat-label">Instructors</span>
+                            </div>
+                            <div class="about-kinetic-stat">
+                                <span class="about-kinetic-stat-num">2</span>
+                                <span class="about-kinetic-stat-label">Locations</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-kinetic-image-wrapper">
+                        <div class="about-kinetic-image">
+                            <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=800&q=80" alt="Studio" loading="lazy">
+                        </div>
+                        <div class="about-kinetic-float-card">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Since 1999</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section-kinetic section-services-kinetic">
+            <div class="container-kinetic">
+                <div class="section-kinetic-header">
+                    <span class="section-kinetic-num">[06]</span>
+                    <h2 class="section-kinetic-title">Services</h2>
+                </div>
+                <div class="services-kinetic-list">
+                    <div class="service-kinetic-item">
+                        <span class="service-kinetic-num">01</span>
+                        <div class="service-kinetic-icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="service-kinetic-text">
+                            <h3>PRIVATE CLASSES</h3>
+                            <p>One-on-one instruction at your pace</p>
+                        </div>
+                    </div>
+                    <div class="service-kinetic-item">
+                        <span class="service-kinetic-num">02</span>
+                        <div class="service-kinetic-icon"><i class="fa-solid fa-building"></i></div>
+                        <div class="service-kinetic-text">
+                            <h3>CORPORATE EVENTS</h3>
+                            <p>Team building through movement</p>
+                        </div>
+                    </div>
+                    <div class="service-kinetic-item">
+                        <span class="service-kinetic-num">03</span>
+                        <div class="service-kinetic-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                        <div class="service-kinetic-text">
+                            <h3>DANCE PARTIES</h3>
+                            <p>Private celebrations with themed nights</p>
+                        </div>
+                    </div>
+                    <div class="service-kinetic-item">
+                        <span class="service-kinetic-num">04</span>
+                        <div class="service-kinetic-icon"><i class="fa-solid fa-music"></i></div>
+                        <div class="service-kinetic-text">
+                            <h3>CHOREOGRAPHY</h3>
+                            <p>Custom routines crafted for you</p>
+                        </div>
+                    </div>
+                    <div class="service-kinetic-item">
+                        <span class="service-kinetic-num">05</span>
+                        <div class="service-kinetic-icon"><i class="fa-solid fa-campground"></i></div>
+                        <div class="service-kinetic-text">
+                            <h3>DANCE CAMPS</h3>
+                            <p>Intensive multi-day workshops</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="section-kinetic section-testimonials-kinetic">
+            <div class="container-kinetic">
+                <div class="section-kinetic-header">
+                    <span class="section-kinetic-num">[07]</span>
+                    <h2 class="section-kinetic-title">What They<br>Say</h2>
+                </div>
+                <div class="testimonials-kinetic-grid">
+                    <div class="testimonial-kinetic-card">
+                        <div class="testimonial-kinetic-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-kinetic-text">"Amazing studio with incredible instructors! I've been taking classes here for 6 months and I've improved so much."</p>
+                        <div class="testimonial-kinetic-author">
+                            <span class="testimonial-kinetic-name">Sarah Johnson</span>
+                            <span class="testimonial-kinetic-role">Hip Hop Student</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-kinetic-card">
+                        <div class="testimonial-kinetic-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-kinetic-text">"The best dance studio in Bangkok! The facilities are top-notch and the instructors really care about your progress."</p>
+                        <div class="testimonial-kinetic-author">
+                            <span class="testimonial-kinetic-name">Mike Chen</span>
+                            <span class="testimonial-kinetic-role">Salsa Student</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-kinetic-card">
+                        <div class="testimonial-kinetic-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-kinetic-text">"I found my passion for dance here. From zero experience to performing on stage in just one year."</p>
+                        <div class="testimonial-kinetic-author">
+                            <span class="testimonial-kinetic-name">Emma Wilson</span>
+                            <span class="testimonial-kinetic-role">Contemporary Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="section-kinetic section-cta-kinetic">
+            <div class="container-kinetic">
+                <div class="cta-kinetic-banner">
+                    <h2 class="cta-kinetic-title">Ready to<br>start dancing?</h2>
+                    <p class="cta-kinetic-desc">Your first class awaits. No commitment, no pressure — just movement.</p>
+                    <a href="https://booking.rumpuree.com" class="btn-kinetic btn-kinetic-primary btn-kinetic-lg">Book Your First Class</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-kinetic">
+        <div class="footer-kinetic-grid">
+            <div class="footer-kinetic-brand">
+                <a href="#" class="logo-kinetic">
+                    <span class="logo-kinetic-dot"></span>
+                    <span class="logo-kinetic-text">Rumpuree</span>
+                </a>
+                <p class="footer-kinetic-desc">Bangkok's premier dance destination since 1999.</p>
+                <div class="footer-kinetic-socials">
+                    <a href="https://www.instagram.com/rumpuree/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@rumpuree" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://line.me" target="_blank" aria-label="Line"><i class="fa-brands fa-line"></i></a>
+                </div>
+            </div>
+            <div class="footer-kinetic-col">
+                <h4 class="footer-kinetic-title">Navigate</h4>
+                <ul class="footer-kinetic-links">
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#styles">Dance Styles</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-kinetic-col">
+                <h4 class="footer-kinetic-title">Asok</h4>
+                <p>2nd Fl, Jasmine City Bldg.<br>Sukhumvit 23 Alley<br>Bangkok 10110</p>
+                <a href="tel:092-204-9677" class="footer-kinetic-phone">092-204-9677</a>
+            </div>
+            <div class="footer-kinetic-col">
+                <h4 class="footer-kinetic-title">Samyan</h4>
+                <p>3rd Fl, Samyan Mitrtown<br>944 Rama IV Rd<br>Bangkok 10330</p>
+                <a href="tel:092-204-9655" class="footer-kinetic-phone">092-204-9655</a>
+            </div>
+        </div>
+        <div class="footer-kinetic-bottom">
+            <p>© 1999–2026 RUMPUREE. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="lib/gsap/gsap.min.js"></script>
+    <script src="lib/gsap/ScrollTrigger.min.js"></script>
+    <script src="js/main-animated.js"></script>
+</body>
+</html>

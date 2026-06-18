@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumpuree - Dance Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Kanit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particles Background -->
+    <div class="particles-bg" id="particles"></div>
+
+    <!-- Social Icon Bar -->
+    <div class="icon-bar">
+        <a href="https://www.instagram.com/rumpuree/" class="instagram" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@rumpuree" class="youtube" target="_blank" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://line.me" class="line" target="_blank" aria-label="Line">
+            <i class="fa-brands fa-line"></i>
+        </a>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="https://singhawon.com/schedule/4">Schedule</a>
+        <a href="https://singhawon.com/fee">Fee</a>
+        <a href="https://singhawon.com/promotion">Promotion</a>
+        <a href="https://singhawon.com?anchor=classupdate">New Class & Workshop</a>
+        <a href="https://singhawon.com?anchor=otherservice">Our Events</a>
+        <a href="https://singhawon.com?anchor=otherservice">Our Services</a>
+        <a href="https://singhawon.com?anchor=aboutus">About Us</a>
+        <a href="https://booking.rumpuree.com" class="nav-login" style="text-align:center; margin-top: 1.5rem;">LOGIN</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="https://singhawon.com" class="nav-logo">
+                <img src="https://singhawon.com/images/logo.png" alt="Rumpuree Logo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 60%22%3E%3Ctext x=%2210%22 y=%2240%22 fill=%22%23ff6b35%22 font-family=%22Poppins%22 font-weight=%22900%22 font-size=%2228%22%3ERUMPUREE%3C/text%3E%3C/svg%3E'; this.style.height='50px';">
+            </a>
+            <ul class="nav-links">
+                <li><a href="https://singhawon.com/schedule/4">Schedule</a></li>
+                <li><a href="https://singhawon.com/fee">Fee</a></li>
+                <li><a href="https://singhawon.com/promotion">Promotion</a></li>
+                <li><a href="https://singhawon.com?anchor=classupdate">New Class & Workshop</a></li>
+                <li><a href="https://singhawon.com?anchor=otherservice">Our Events</a></li>
+                <li><a href="https://singhawon.com?anchor=otherservice">Our Services</a></li>
+                <li><a href="https://singhawon.com?anchor=aboutus">About Us</a></li>
+                <li><a href="https://booking.rumpuree.com" class="nav-login">LOGIN</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="hero">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=1920&q=80');"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1547153760-18fc86324498?w=1920&q=80');"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=1920&q=80');"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=1920&q=80');"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Rumpuree Dance Studio</h1>
+                <p class="hero-subtitle">Feel the Rhythm &bull; Express Your Soul</p>
+                <a href="https://singhawon.com/schedule/4" class="hero-cta">Explore Classes</a>
+            </div>
+            <div class="hero-indicators" id="heroIndicators">
+                <div class="hero-indicator active" data-index="0"></div>
+                <div class="hero-indicator" data-index="1"></div>
+                <div class="hero-indicator" data-index="2"></div>
+                <div class="hero-indicator" data-index="3"></div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT US ===== -->
+        <section class="section about-section" id="aboutus">
+            <div class="container">
+                <div class="text-center mb-3">
+                    <h2 class="section-title text-gradient">More About Us</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image reveal-left">
+                        <img src="https://images.unsplash.com/photo-1535525153412-5a42439a210d?w=600&q=80" alt="Dancer 1" loading="lazy">
+                    </div>
+                    <div class="about-card reveal" style="transition-delay: 0.1s;">
+                        <div class="about-card-icon" style="background: var(--gradient-1);">
+                            <i class="fa-solid fa-user text-white"></i>
+                        </div>
+                        <h3>Who is Rumpuree?</h3>
+                        <p>Discover our story and the passion behind every movement at Rumpuree Dance Studio.</p>
+                        <div class="about-buttons">
+                            <a href="https://singhawon.com/aboutus" class="about-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="about-card reveal" style="transition-delay: 0.2s;">
+                        <div class="about-card-icon" style="background: var(--gradient-3);">
+                            <i class="fa-solid fa-star text-white"></i>
+                        </div>
+                        <h3>Why Us?</h3>
+                        <p>World-class instructors, state-of-the-art studios, and a community that inspires.</p>
+                        <div class="about-buttons">
+                            <a href="https://singhawon.com/whyus" class="about-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="about-card reveal" style="transition-delay: 0.3s;">
+                        <div class="about-card-icon" style="background: var(--gradient-4);">
+                            <i class="fa-solid fa-building text-white"></i>
+                        </div>
+                        <h3>Our Studios</h3>
+                        <p>Visit our beautiful studios in Asok and Samyan Mitrtown with top facilities.</p>
+                        <div class="about-buttons">
+                            <a href="https://singhawon.com/studio" class="about-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="about-card reveal" style="transition-delay: 0.4s;">
+                        <div class="about-card-icon" style="background: var(--gradient-5);">
+                            <i class="fa-solid fa-calendar text-white"></i>
+                        </div>
+                        <h3>Class Schedule</h3>
+                        <p>Browse our full schedule of classes across all dance styles and skill levels.</p>
+                        <div class="about-buttons">
+                            <a href="https://singhawon.com/schedule/4" class="about-btn">View Schedule <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="about-image reveal-right">
+                        <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?w=600&q=80" alt="Dancer 2" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DANCE UPDATE ===== -->
+        <section class="section dance-update" id="classupdate">
+            <div class="container">
+                <h2 class="section-title title-orange reveal">Dance Update</h2>
+                <div class="instagram-feed reveal" style="transition-delay: 0.2s;">
+                    <div style="position: relative; width: 100%; height: 100%; min-height: 500px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.02); border-radius: 20px;">
+                        <div style="text-align: center; padding: 2rem;">
+                            <i class="fa-brands fa-instagram" style="font-size: 4rem; color: var(--primary); margin-bottom: 1rem; display: block;"></i>
+                            <p style="color: var(--text); font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 600;">Follow us on Instagram</p>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">@rumpuree</p>
+                            <a href="https://www.instagram.com/rumpuree/" target="_blank" class="about-btn" style="margin-top: 1.5rem;">
+                                <i class="fa-brands fa-instagram"></i> Follow @rumpuree
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DANCE STYLES ===== -->
+        <section class="section dance-styles" id="dancestyles">
+            <div class="container">
+                <h2 class="section-title title-gradient reveal">Dance Styles</h2>
+                <div class="carousel-wrapper reveal" style="transition-delay: 0.2s;">
+                    <button class="carousel-btn prev" id="dancePrev" aria-label="Previous">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-track" id="danceTrack">
+                        <div class="dance-card" data-style="ballet adult">
+                            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=400&h=600&fit=crop" alt="Ballet Adult" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Ballet Adult</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="bellydance">
+                            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?w=400&h=600&fit=crop" alt="Belly Dance" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Belly Dance</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="street jazz">
+                            <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=400&h=600&fit=crop" alt="Street Jazz" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Street Jazz</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="k-pop">
+                            <img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=400&h=600&fit=crop" alt="K-Pop" loading="lazy">
+                            <div class="dance-card-overlay"><h3>K-Pop</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="focus zone">
+                            <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?w=400&h=600&fit=crop" alt="Focus Zone" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Focus Zone</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="argentine tango">
+                            <img src="https://images.unsplash.com/photo-1535525153412-5a42439a210d?w=400&h=600&fit=crop" alt="Argentine Tango" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Argentine Tango</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="bollywood">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=600&fit=crop" alt="Bollywood" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Bollywood</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="contemporary">
+                            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=400&h=600&fit=crop" alt="Contemporary" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Contemporary</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="flamenco">
+                            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?w=400&h=600&fit=crop" alt="Flamenco" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Flamenco</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="hip hop">
+                            <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=400&h=600&fit=crop" alt="Hip Hop" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Hip Hop</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="jazz">
+                            <img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=400&h=600&fit=crop" alt="Jazz" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Jazz</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="pole dance">
+                            <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?w=400&h=600&fit=crop" alt="Pole Dance" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Pole Dance</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="zumba">
+                            <img src="https://images.unsplash.com/photo-1535525153412-5a42439a210d?w=400&h=600&fit=crop" alt="Zumba" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Zumba</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="salsa">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=600&fit=crop" alt="Salsa" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Salsa</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="bachata">
+                            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=400&h=600&fit=crop" alt="Bachata" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Bachata</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="reggaeton">
+                            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?w=400&h=600&fit=crop" alt="Reggaeton" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Reggaeton</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="yoga">
+                            <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=400&h=600&fit=crop" alt="Yoga" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Yoga Flow</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="dancehall">
+                            <img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=400&h=600&fit=crop" alt="Dancehall" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Dancehall</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="african dance">
+                            <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?w=400&h=600&fit=crop" alt="African Dance" loading="lazy">
+                            <div class="dance-card-overlay"><h3>African Dance</h3></div>
+                        </div>
+                        <div class="dance-card" data-style="piloxing">
+                            <img src="https://images.unsplash.com/photo-1535525153412-5a42439a210d?w=400&h=600&fit=crop" alt="Piloxing" loading="lazy">
+                            <div class="dance-card-overlay"><h3>Piloxing</h3></div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" id="danceNext" aria-label="Next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-dots" id="danceDots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OUR EVENTS ===== -->
+        <section class="section events-section" id="otherservice">
+            <div class="container">
+                <h2 class="section-title reveal" style="background: var(--gradient-7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Our Events</h2>
+                <div class="events-grid">
+                    <div class="event-card reveal" style="transition-delay: 0.1s;">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Event 1" loading="lazy">
+                        <div class="event-card-gradient"></div>
+                        <span class="event-card-tag">Workshop</span>
+                        <div class="event-card-info">
+                            <h3>Summer Dance Camp</h3>
+                            <p>Intensive workshop for all levels</p>
+                        </div>
+                    </div>
+                    <div class="event-card reveal" style="transition-delay: 0.2s;">
+                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&q=80" alt="Event 2" loading="lazy">
+                        <div class="event-card-gradient"></div>
+                        <span class="event-card-tag">Performance</span>
+                        <div class="event-card-info">
+                            <h3>Rumpuree Showcase</h3>
+                            <p>Annual student performance night</p>
+                        </div>
+                    </div>
+                    <div class="event-card reveal" style="transition-delay: 0.3s;">
+                        <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?w=600&q=80" alt="Event 3" loading="lazy">
+                        <div class="event-card-gradient"></div>
+                        <span class="event-card-tag">Social</span>
+                        <div class="event-card-info">
+                            <h3>Dance Social Night</h3>
+                            <p>Meet & dance with the community</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DANCE QUOTE ===== -->
+        <section class="quote-section" id="quote">
+            <div class="container">
+                <h2 class="section-title reveal" style="background: var(--gradient-8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Dance Quote</h2>
+                <div class="quote-slider reveal" style="transition-delay: 0.2s;">
+                    <div class="quote-slide active" data-index="0">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left text-white"></i></div>
+                        <p class="quote-text">"Dance is the hidden language of the soul."</p>
+                        <div class="quote-author">Martha Graham</div>
+                    </div>
+                    <div class="quote-slide" data-index="1">
+                        <div class="quote-icon" style="background: var(--gradient-3);"><i class="fa-solid fa-quote-left text-white"></i></div>
+                        <p class="quote-text">"To dance is to be out of yourself. Larger, more beautiful, more powerful."</p>
+                        <div class="quote-author">Agnes De Mille</div>
+                    </div>
+                    <div class="quote-slide" data-index="2">
+                        <div class="quote-icon" style="background: var(--gradient-4);"><i class="fa-solid fa-quote-left text-white"></i></div>
+                        <p class="quote-text">"Life is not about waiting for the storm to pass, it's about learning to dance in the rain."</p>
+                        <div class="quote-author">Vivian Greene</div>
+                    </div>
+                    <div class="quote-slide" data-index="3">
+                        <div class="quote-icon" style="background: var(--gradient-5);"><i class="fa-solid fa-quote-left text-white"></i></div>
+                        <p class="quote-text">"Dance first. Think later. It's the natural order."</p>
+                        <div class="quote-author">Samuel Beckett</div>
+                    </div>
+                    <div class="quote-slide" data-index="4">
+                        <div class="quote-icon" style="background: var(--gradient-6);"><i class="fa-solid fa-quote-left text-white"></i></div>
+                        <p class="quote-text">"Dance is the joy of movement and the heart of life."</p>
+                        <div class="quote-author">Anonymous</div>
+                    </div>
+                    <div class="quote-controls">
+                        <button class="quote-arrow" id="quotePrev" aria-label="Previous quote">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <div class="quote-dots" id="quoteDots"></div>
+                        <button class="quote-arrow" id="quoteNext" aria-label="Next quote">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OTHER SERVICES ===== -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <h2 class="section-title reveal visible" style="background: var(--gradient-9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Other Services</h2>
+                <div class="services-wrapper reveal visible" style="transition-delay: 0.2s;">
+                    <div class="services-header">
+                        <span class="services-count">7 Services Available</span>
+                        <button class="services-view-btn" id="servicesViewBtn">
+                            <i class="fa-solid fa-grip"></i>&nbsp; Grid View
+                        </button>
+                    </div>
+                    <div class="services-track-wrapper">
+                        <div class="services-track" id="servicesTrack">
+                            <div class="service-card" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+                                <img src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=600&q=80" alt="Private Class" loading="lazy">
+                                <div class="service-card-icon"><i class="fa-solid fa-user"></i></div>
+                                <div class="service-card-overlay">
+                                    <h3>Private Classes</h3>
+                                    <span class="service-card-tag">One-on-One</span>
+                                </div>
+                            </div>
+                            <div class="service-card" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+                                <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=600&q=80" alt="Corporate Event" loading="lazy">
+                                <div class="service-card-icon"><i class="fa-solid fa-building"></i></div>
+                                <div class="service-card-overlay">
+                                    <h3>Corporate Events</h3>
+                                    <span class="service-card-tag">Team Building</span>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <img src="https://images.unsplash.com/photo-1527356608105-72bcc8e1621d?w=600&q=80" alt="Dance Party" loading="lazy">
+                                <div class="service-card-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                                <div class="service-card-overlay">
+                                    <h3>Dance Parties</h3>
+                                    <span class="service-card-tag">Social Events</span>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&q=80" alt="Choreography" loading="lazy">
+                                <div class="service-card-icon"><i class="fa-solid fa-music"></i></div>
+                                <div class="service-card-overlay">
+                                    <h3>Choreography</h3>
+                                    <span class="service-card-tag">Custom Routines</span>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <img src="https://images.unsplash.com/photo-1483729558449-97ef09f8d450?w=600&q=80" alt="Dance Camp" loading="lazy">
+                                <div class="service-card-icon"><i class="fa-solid fa-campground"></i></div>
+                                <div class="service-card-overlay">
+                                    <h3>Dance Camps</h3>
+                                    <span class="service-card-tag">Intensive</span>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <img src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?w=600&q=80" alt="Studio Rental" loading="lazy">
+                                <div class="service-card-icon"><i class="fa-solid fa-key"></i></div>
+                                <div class="service-card-overlay">
+                                    <h3>Studio Rental</h3>
+                                    <span class="service-card-tag">By Hour</span>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <img src="https://images.unsplash.com/photo-1518605348426-e4febf67bf2d?w=600&q=80" alt="Dance Competition" loading="lazy">
+                                <div class="service-card-icon"><i class="fa-solid fa-trophy"></i></div>
+                                <div class="service-card-overlay">
+                                    <h3>Competitions</h3>
+                                    <span class="service-card-tag">Pro Level</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-nav">
+                        <button class="services-nav-btn" id="servicesPrev" aria-label="Previous">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button class="services-nav-btn" id="servicesNext" aria-label="Next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="services-progress">
+                        <div class="services-progress-bar" id="servicesProgress"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS ===== -->
+        <section class="section testimonials-section" id="testimonial">
+            <div class="container">
+                <h2 class="section-title reveal" style="background: var(--gradient-10); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Testimonial</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card reveal" style="transition-delay: 0.1s;">
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="testimonial-text">"Amazing studio with incredible instructors! I've been taking classes here for 6 months and I've improved so much. The atmosphere is so welcoming and fun."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Sarah" class="testimonial-avatar" loading="lazy" onerror="this.style.background='var(--gradient-1)'; this.style.borderRadius='50%';">
+                            <div class="testimonial-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Hip Hop Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal" style="transition-delay: 0.2s;">
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="testimonial-text">"The best dance studio in Bangkok! The facilities are top-notch and the instructors really care about your progress. Highly recommend Rumpuree!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Mike" class="testimonial-avatar" loading="lazy" onerror="this.style.background='var(--gradient-3)'; this.style.borderRadius='50%';">
+                            <div class="testimonial-info">
+                                <h4>Mike Chen</h4>
+                                <span>Salsa Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal" style="transition-delay: 0.3s;">
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="testimonial-text">"I found my passion for dance here. From zero experience to performing on stage in just one year. This studio changed my life. Forever grateful!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Emma" class="testimonial-avatar" loading="lazy" onerror="this.style.background='var(--gradient-5)'; this.style.borderRadius='50%';">
+                            <div class="testimonial-info">
+                                <h4>Emma Wilson</h4>
+                                <span>Contemporary Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal" style="transition-delay: 0.4s;">
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="testimonial-text">"Professional, fun, and challenging classes every time. The K-Pop classes are especially amazing! Love the energy and vibe of this place."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="Alex" class="testimonial-avatar" loading="lazy" onerror="this.style.background='var(--gradient-4)'; this.style.borderRadius='50%';">
+                            <div class="testimonial-info">
+                                <h4>Alex Kim</h4>
+                                <span>K-Pop Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-logo">Rumpuree</div>
+                <p class="footer-desc">Thailand's premier dance studio offering 40+ dance styles, world-class instructors, and two beautiful locations in Bangkok.</p>
+                <div class="footer-social-row">
+                    <a href="https://www.instagram.com/rumpuree/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@rumpuree" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://line.me" target="_blank" aria-label="Line"><i class="fa-brands fa-line"></i></a>
+                    <a href="https://www.tiktok.com/@rumpuree" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/rumpuree" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="footer-connection">
+                    <i class="fa-solid fa-clock"></i>
+                    <div class="footer-connection-text">
+                        <strong>Opening Hours</strong>
+                        Mon - Fri: 9:00 - 22:00<br>
+                        Sat - Sun: 10:00 - 21:00
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="https://singhawon.com/schedule/4"><i class="fa-solid fa-chevron-right"></i> Class Schedule</a></li>
+                    <li><a href="https://singhawon.com/fee"><i class="fa-solid fa-chevron-right"></i> Membership Fee</a></li>
+                    <li><a href="https://singhawon.com/promotion"><i class="fa-solid fa-chevron-right"></i> Promotions</a></li>
+                    <li><a href="https://singhawon.com?anchor=classupdate"><i class="fa-solid fa-chevron-right"></i> New Class & Workshop</a></li>
+                    <li><a href="https://singhawon.com?anchor=aboutus"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="https://booking.rumpuree.com"><i class="fa-solid fa-chevron-right"></i> Member Login</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-col-title">Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Private Classes</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Corporate Events</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Dance Parties</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Choreography</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Dance Camps</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Studio Rental</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Competitions</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-col-title">Our Locations</h4>
+                <div class="footer-branches">
+                    <div class="footer-branch-card">
+                        <h4>Asok Branch</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> 2nd Fl, Jasmine City Bldg.<br>Sukhumvit 23 Alley, Khlong Toei<br>Bangkok 10110</p>
+                        <p class="branch-tel"><i class="fa-solid fa-phone"></i> 092-204-9677</p>
+                        <a href="https://www.google.com/maps/place/rumPUREE+Asok" target="_blank" class="footer-btn">Get Map <i class="fa-solid fa-map-location-dot"></i></a>
+                    </div>
+                </div>
+                <div class="footer-branches">
+                    <div class="footer-branch-card">
+                        <h4>Samyan Mitrtown Branch</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Samyan Mitrtown 3rd floor<br>944 Rama IV Rd, Wang Mai<br>Bangkok 10330</p>
+                        <p class="branch-tel"><i class="fa-solid fa-phone"></i> 092-204-9655</p>
+                        <a href="https://www.google.com/maps/place/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B8%A5%E0%B8%B2%E0%B8%A3%E0%B8%B3%E0%B8%9B%E0%B8%B8%E0%B8%A3%E0%B8%B5" target="_blank" class="footer-btn">Get Map <i class="fa-solid fa-map-location-dot"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <p>&copy; 1999-2026 RUMPUREE ALL RIGHTS RESERVED</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

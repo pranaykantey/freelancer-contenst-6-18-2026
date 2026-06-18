@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumpuree NEON — Dance Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-neon.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="cursor-neon" id="cursorNeon"></div>
+
+    <div class="preloader-neon" id="preloaderNeon">
+        <div class="preloader-inner">
+            <div class="preloader-text">RUMPUREE//NEON</div>
+            <div class="preloader-bar"><div class="preloader-fill"></div></div>
+        </div>
+    </div>
+
+    <nav class="nav-neon" id="navNeon">
+        <div class="nav-neon-inner">
+            <a href="#" class="logo-neon">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">RUMPUREE</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <ul class="nav-neon-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#styles" class="nav-link">Styles</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#quote" class="nav-link">Quotes</a></li>
+                <li><a href="https://booking.rumpuree.com" class="btn-neon btn-neon-cyan">LOGIN</a></li>
+            </ul>
+            <button class="nav-toggle-neon" id="navToggleNeon" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu-neon" id="mobileMenuNeon">
+            <a href="#hero" class="mobile-link"><span class="mobile-link-prefix">01</span>Home</a>
+            <a href="#styles" class="mobile-link"><span class="mobile-link-prefix">02</span>Styles</a>
+            <a href="#events" class="mobile-link"><span class="mobile-link-prefix">03</span>Events</a>
+            <a href="#services" class="mobile-link"><span class="mobile-link-prefix">04</span>Services</a>
+            <a href="#quote" class="mobile-link"><span class="mobile-link-prefix">05</span>Quotes</a>
+            <a href="https://booking.rumpuree.com" class="btn-neon btn-neon-magenta btn-mobile-full">LOGIN</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-neon" id="hero">
+            <canvas id="heroCanvas"></canvas>
+            <div class="hero-neon-overlay"></div>
+            <div class="hero-neon-content">
+                <div class="hero-tagline">
+                    <span class="hero-tag-prefix">//</span> DANCE STUDIO <span class="hero-tag-prefix">//</span> EST.1999
+                </div>
+                <h1 class="hero-neon-title">
+                    <span class="hero-line">DANCE</span>
+                    <span class="hero-line hero-line-accent">BEYOND</span>
+                    <span class="hero-line">LIMITS</span>
+                </h1>
+                <p class="hero-neon-desc">Step into the future of movement. Where neon meets rhythm and every beat transforms into light.</p>
+                <div class="hero-neon-actions">
+                    <a href="#styles" class="btn-neon btn-neon-magenta">Explore Styles <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-corner corner-tl"></div>
+            <div class="hero-corner corner-tr"></div>
+            <div class="hero-corner corner-bl"></div>
+            <div class="hero-corner corner-br"></div>
+        </section>
+
+        <div class="marquee-neon">
+            <div class="marquee-neon-track">
+                <span class="neon-text-cyan">◆ HIP HOP</span>
+                <span class="neon-text-magenta">◆ K-POP</span>
+                <span class="neon-text-yellow">◆ SALSA</span>
+                <span class="neon-text-cyan">◆ BALLET</span>
+                <span class="neon-text-magenta">◆ POLE DANCE</span>
+                <span class="neon-text-yellow">◆ CONTEMPORARY</span>
+                <span class="neon-text-cyan">◆ BELLY DANCE</span>
+                <span class="neon-text-magenta">◆ FLAMENCO</span>
+                <span class="neon-text-yellow">◆ ZUMBA</span>
+                <span class="neon-text-cyan">◆ YOGA</span>
+                <span class="neon-text-magenta">◆ TANGO</span>
+                <span class="neon-text-yellow">◆ JAZZ</span>
+                <span class="neon-text-cyan">◆ HIP HOP</span>
+                <span class="neon-text-magenta">◆ K-POP</span>
+                <span class="neon-text-yellow">◆ SALSA</span>
+                <span class="neon-text-cyan">◆ BALLET</span>
+                <span class="neon-text-magenta">◆ POLE DANCE</span>
+                <span class="neon-text-yellow">◆ CONTEMPORARY</span>
+            </div>
+        </div>
+
+        <section class="section-neon section-styles-neon" id="styles">
+            <div class="container-neon">
+                <div class="section-neon-header">
+                    <div class="section-neon-label">[02] // DANCE_STYLES</div>
+                    <h2 class="section-neon-title">
+                        <span class="title-glitch" data-text="DANCE">DANCE</span> STYLES
+                    </h2>
+                </div>
+                <div class="styles-neon-grid">
+                    <div class="style-neon-card" data-color="cyan">
+                        <div class="style-neon-border"></div>
+                        <div class="style-neon-num">01</div>
+                        <div class="style-neon-icon"><i class="fa-solid fa-person-walking"></i></div>
+                        <h3>HIP HOP</h3>
+                        <p class="style-neon-tag">Urban</p>
+                    </div>
+                    <div class="style-neon-card" data-color="magenta">
+                        <div class="style-neon-border"></div>
+                        <div class="style-neon-num">02</div>
+                        <div class="style-neon-icon"><i class="fa-solid fa-music"></i></div>
+                        <h3>K-POP</h3>
+                        <p class="style-neon-tag">Idol</p>
+                    </div>
+                    <div class="style-neon-card" data-color="yellow">
+                        <div class="style-neon-border"></div>
+                        <div class="style-neon-num">03</div>
+                        <div class="style-neon-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <h3>SALSA</h3>
+                        <p class="style-neon-tag">Latin</p>
+                    </div>
+                    <div class="style-neon-card" data-color="cyan">
+                        <div class="style-neon-border"></div>
+                        <div class="style-neon-num">04</div>
+                        <div class="style-neon-icon"><i class="fa-solid fa-feather"></i></div>
+                        <h3>BALLET</h3>
+                        <p class="style-neon-tag">Classic</p>
+                    </div>
+                    <div class="style-neon-card" data-color="magenta">
+                        <div class="style-neon-border"></div>
+                        <div class="style-neon-num">05</div>
+                        <div class="style-neon-icon"><i class="fa-solid fa-fire"></i></div>
+                        <h3>POLE DANCE</h3>
+                        <p class="style-neon-tag">Power</p>
+                    </div>
+                    <div class="style-neon-card" data-color="yellow">
+                        <div class="style-neon-border"></div>
+                        <div class="style-neon-num">06</div>
+                        <div class="style-neon-icon"><i class="fa-solid fa-wind"></i></div>
+                        <h3>CONTEMPORARY</h3>
+                        <p class="style-neon-tag">Fluid</p>
+                    </div>
+                    <div class="style-neon-card" data-color="cyan">
+                        <div class="style-neon-border"></div>
+                        <div class="style-neon-num">07</div>
+                        <div class="style-neon-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h3>JAZZ</h3>
+                        <p class="style-neon-tag">Energetic</p>
+                    </div>
+                    <div class="style-neon-card" data-color="magenta">
+                        <div class="style-neon-border"></div>
+                        <div class="style-neon-num">08</div>
+                        <div class="style-neon-icon"><i class="fa-solid fa-spa"></i></div>
+                        <h3>YOGA</h3>
+                        <p class="style-neon-tag">Mindful</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-neon section-events-neon" id="events">
+            <div class="container-neon">
+                <div class="section-neon-header">
+                    <div class="section-neon-label">[03] // LIVE_EVENTS</div>
+                    <h2 class="section-neon-title">
+                        <span class="title-glitch" data-text="NEON">NEON</span> NIGHTS
+                    </h2>
+                </div>
+                <div class="events-neon-grid">
+                    <div class="event-neon-card">
+                        <div class="event-neon-img">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Event" loading="lazy">
+                            <div class="event-neon-badge">UPCOMING</div>
+                        </div>
+                        <div class="event-neon-info">
+                            <p class="event-neon-date">JUNE 28 · 20:00</p>
+                            <h3>Summer Neon Battle</h3>
+                            <p>Freestyle competition with prizes</p>
+                        </div>
+                    </div>
+                    <div class="event-neon-card">
+                        <div class="event-neon-img">
+                            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&q=80" alt="Event" loading="lazy">
+                            <div class="event-neon-badge">WORKSHOP</div>
+                        </div>
+                        <div class="event-neon-info">
+                            <p class="event-neon-date">JULY 05 · 14:00</p>
+                            <h3>K-Pop Masterclass</h3>
+                            <p>Learn viral choreography with guest instructor</p>
+                        </div>
+                    </div>
+                    <div class="event-neon-card">
+                        <div class="event-neon-img">
+                            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?w=600&q=80" alt="Event" loading="lazy">
+                            <div class="event-neon-badge">SOCIAL</div>
+                        </div>
+                        <div class="event-neon-info">
+                            <p class="event-neon-date">JULY 12 · 19:00</p>
+                            <h3>Neon Salsa Social</h3>
+                            <p>Dance the night away under blacklights</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-neon section-services-neon" id="services">
+            <div class="container-neon">
+                <div class="section-neon-header">
+                    <div class="section-neon-label">[04] // SERVICES</div>
+                    <h2 class="section-neon-title">
+                        <span class="title-glitch" data-text="WHAT">WHAT</span> WE GIVE
+                    </h2>
+                </div>
+                <div class="services-neon-list">
+                    <div class="service-neon-item">
+                        <span class="service-neon-num">01</span>
+                        <div class="service-neon-icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="service-neon-text">
+                            <h3>PRIVATE CLASSES</h3>
+                            <p>One-on-one instruction at your pace</p>
+                        </div>
+                    </div>
+                    <div class="service-neon-item">
+                        <span class="service-neon-num">02</span>
+                        <div class="service-neon-icon"><i class="fa-solid fa-building"></i></div>
+                        <div class="service-neon-text">
+                            <h3>CORPORATE EVENTS</h3>
+                            <p>Team building through movement</p>
+                        </div>
+                    </div>
+                    <div class="service-neon-item">
+                        <span class="service-neon-num">03</span>
+                        <div class="service-neon-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                        <div class="service-neon-text">
+                            <h3>DANCE PARTIES</h3>
+                            <p>Private celebrations with themed nights</p>
+                        </div>
+                    </div>
+                    <div class="service-neon-item">
+                        <span class="service-neon-num">04</span>
+                        <div class="service-neon-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+                        <div class="service-neon-text">
+                            <h3>CHOREOGRAPHY</h3>
+                            <p>Custom routines crafted for you</p>
+                        </div>
+                    </div>
+                    <div class="service-neon-item">
+                        <span class="service-neon-num">05</span>
+                        <div class="service-neon-icon"><i class="fa-solid fa-campground"></i></div>
+                        <div class="service-neon-text">
+                            <h3>DANCE CAMPS</h3>
+                            <p>Intensive multi-day workshops</p>
+                        </div>
+                    </div>
+                    <div class="service-neon-item">
+                        <span class="service-neon-num">06</span>
+                        <div class="service-neon-icon"><i class="fa-solid fa-key"></i></div>
+                        <div class="service-neon-text">
+                            <h3>STUDIO RENTAL</h3>
+                            <p>Book our space for your projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-neon section-quotes-neon" id="quote">
+            <div class="container-neon">
+                <div class="section-neon-header">
+                    <div class="section-neon-label">[05] // TESTIMONIALS</div>
+                    <h2 class="section-neon-title">
+                        <span class="title-glitch" data-text="VOICES">VOICES</span>
+                    </h2>
+                </div>
+                <div class="quotes-neon-grid">
+                    <div class="quote-neon-card">
+                        <div class="quote-neon-mark">❝</div>
+                        <p class="quote-neon-text">The energy here is electric. Every class feels like a party with purpose.</p>
+                        <div class="quote-neon-author">
+                            <span class="quote-neon-name">SARAH J.</span>
+                            <span class="quote-neon-role">Hip Hop</span>
+                        </div>
+                    </div>
+                    <div class="quote-neon-card">
+                        <div class="quote-neon-mark">❝</div>
+                        <p class="quote-neon-text">I never thought I'd dance on stage. Rumpuree made the impossible possible in one year.</p>
+                        <div class="quote-neon-author">
+                            <span class="quote-neon-name">EMMA W.</span>
+                            <span class="quote-neon-role">Contemporary</span>
+                        </div>
+                    </div>
+                    <div class="quote-neon-card">
+                        <div class="quote-neon-mark">❝</div>
+                        <p class="quote-neon-text">Clean studios, pro instructors, and a community that pushes you to glow up.</p>
+                        <div class="quote-neon-author">
+                            <span class="quote-neon-name">MIKE T.</span>
+                            <span class="quote-neon-role">Salsa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee-neon-reverse">
+            <div class="marquee-neon-track-reverse">
+                <span>★ ASOK BRANCH ★ BTS ASOK EXIT 6 ★ 092-204-9677 ★</span>
+                <span>★ SAMYAN BRANCH ★ MRT SAMYAN ★ 092-204-9655 ★</span>
+                <span>★ OPEN 7 DAYS ★ 40+ STYLES ★ WORLD-CLASS INSTRUCTORS ★</span>
+                <span>★ ASOK BRANCH ★ BTS ASOK EXIT 6 ★ 092-204-9677 ★</span>
+                <span>★ SAMYAN BRANCH ★ MRT SAMYAN ★ 092-204-9655 ★</span>
+                <span>★ OPEN 7 DAYS ★ 40+ STYLES ★ WORLD-CLASS INSTRUCTORS ★</span>
+            </div>
+        </div>
+
+        <section class="section-neon section-stats-neon">
+            <div class="container-neon">
+                <div class="stats-grid">
+                    <div class="stat-neon">
+                        <span class="stat-neon-num" data-target="40">00</span>
+                        <span class="stat-neon-plus">+</span>
+                        <span class="stat-neon-label">Dance Styles</span>
+                    </div>
+                    <div class="stat-neon">
+                        <span class="stat-neon-num" data-target="25">00</span>
+                        <span class="stat-neon-label">Expert Instructors</span>
+                    </div>
+                    <div class="stat-neon">
+                        <span class="stat-neon-num" data-target="2">00</span>
+                        <span class="stat-neon-label">Studio Locations</span>
+                    </div>
+                    <div class="stat-neon">
+                        <span class="stat-neon-num" data-target="1999">00</span>
+                        <span class="stat-neon-label">Established</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-neon">
+        <div class="footer-neon-grid">
+            <div class="footer-neon-col">
+                <a href="#" class="logo-neon footer-neon-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">RUMPUREE</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <p class="footer-neon-desc">Bangkok's premier dance destination since 1999. Lighting up the city one step at a time.</p>
+                <div class="footer-neon-socials">
+                    <a href="https://www.instagram.com/rumpuree/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@rumpuree" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://line.me" target="_blank" aria-label="Line"><i class="fa-brands fa-line"></i></a>
+                    <a href="https://www.tiktok.com/@rumpuree" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-neon-col">
+                <h4 class="footer-neon-title">// NAVIGATE</h4>
+                <ul class="footer-neon-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#styles">Dance Styles</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="https://booking.rumpuree.com">Member Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-neon-col">
+                <h4 class="footer-neon-title">// LOCATIONS</h4>
+                <div class="footer-neon-branch">
+                    <p class="footer-neon-branch-name">ASOK</p>
+                    <p>2nd Fl, Jasmine City Bldg.</p>
+                    <p>Sukhumvit 23, Bangkok 10110</p>
+                    <a href="tel:092-204-9677" class="footer-neon-phone">092-204-9677</a>
+                </div>
+                <div class="footer-neon-branch">
+                    <p class="footer-neon-branch-name">SAMYAN</p>
+                    <p>3rd Fl, Samyan Mitrtown</p>
+                    <p>944 Rama IV Rd, Bangkok 10330</p>
+                    <a href="tel:092-204-9655" class="footer-neon-phone">092-204-9655</a>
+                </div>
+            </div>
+            <div class="footer-neon-col">
+                <h4 class="footer-neon-title">// STATUS</h4>
+                <div class="footer-neon-status">
+                    <span class="status-dot online"></span>
+                    <span class="status-text">All systems online</span>
+                </div>
+                <div class="footer-neon-hours">
+                    <p>MON—FRI · 09:00—22:00</p>
+                    <p>SAT—SUN · 10:00—21:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-neon-bottom">
+            <p>© 2026 RUMPUREE // ALL RIGHTS RESERVED // DESIGNED WITH NEON</p>
+        </div>
+    </footer>
+
+    <script src="js/main-neon.js"></script>
+</body>
+</html>
